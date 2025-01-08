@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AV Room User Guides - Daniel Bell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lightbox CSS for image enlargement -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">Daniel Bell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                        <a class="dropdown-item" href="web-development.html">Web Development</a>
+                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Web Development Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">AV Room User Guides</h2>
+                <p>After completing each project, we provide our customers with a user guide. Traditionally, this guide was delivered as a printed PDF, created using Microsoft Word. While functional, this approach often resulted in messy layouts, and the physical copies were prone to being misplaced or damaged over time.</p>
+
+                <p>To enhance the customer experience, I introduced QR code-based user guides that link directly to web pages. These digital guides provide a modern, user-friendly solution, eliminating the need for paper copies and ensuring the information is always accessible.</p>
+
+                <p>Each guide follows a standardized template, making the creation process efficient. Adding a new guide is as simple as taking on-site photos, uploading them to the designated folder, and updating the existing index.html file with the job information.</p>
+
+                <p>To further improve usability, I’ve integrated QR code user guides into my touch panel designs. These codes are prominently displayed on the screen whenever the system is powered on. Customers have reported a significant reduction in user-related issues, as the QR codes allow for instant access to clear and detailed instructions on system operation.</p>
+
+                <p>You can view a sample user guide <a href="https://nhs-generic-user-guide.netlify.app/" target="_blank">here</a>.</p>
+            
+            <!-- Full-Width Cards -->
+            <div class="row">
+                <!-- Full-Width Card 1 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="user-guide9.jpg" data-toggle="lightbox" data-title="Guide1">
+                            <img class="card-img-top" src="user-guide9.jpg" alt="Guide1" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Overview</h5>
+                            <p class="card-text">Each user guide prominently features the room information and the customer's logo, providing a professional and personalized touch. The guide begins with a photo of the room, accompanied by a detailed description of the completed project. Additionally, it includes company information to highlight our services and reinforce brand recognition.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Width Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="user-guide2.jpg" data-toggle="lightbox" data-title="Guide2">
+                            <img class="card-img-top" src="user-guide2.jpg" alt="Guide2" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">QR Code</h5>
+                            <p class="card-text">The home screen of every touch panel design I create features an embedded QR code, providing users with direct access to the relevant user guide.</p>
+
+                            <p class="card-text">This modern and efficient approach streamlines the way user guides are delivered, ensuring easy accessibility and enhancing the overall user experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Width Card 3 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="user-guide3.jpg" data-toggle="lightbox" data-title="Guide3">
+                            <img class="card-img-top" src="user-guide3.jpg" alt="Guide3" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Instruction Guide</h5>
+                            <p class="card-text">The primary advantage of this approach is that users gain immediate access to detailed instructions, accompanied by high-definition images of the system for clear and accurate guidance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Daniel Bell. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Lightbox JS for viewing images in full screen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

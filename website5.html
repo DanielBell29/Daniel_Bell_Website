@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Living Room AV Control System - Daniel Bell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lightbox CSS for image enlargement -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">Daniel Bell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                        <a class="dropdown-item" href="web-development.html">Web Development</a>
+                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Web Development Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Living Room AV Control System</h2>
+                <p class="card-text">In my opinion, this project has been the most exciting I’ve worked on. The living room control system, initially set up and programmed by myself using AMX, had become outdated. I was eager to find a sleek solution that would integrate mobile control into the system.</p>
+
+                <p class="card-text">The system comprises a 2.4m projector screen with relay control, a Panasonic projector, a 65" display, and a 4x2 AV switcher, allowing flexible routing between the projector and the 65" display. Previously, each device was controlled via RS-232. To modernize the system, I decided to install a network switch in the rack, connecting it to the house's Wi-Fi to enable wireless control.</p>
+
+                <p class="card-text">After evaluating several options, I chose to build the control interface using Flask. I designed a sleek, scalable user guide that makes adding additional controls straightforward—simply by adding a new button and modal to the homepage.</p>
+
+                <p class="card-text">Unfortunately, I am unable to provide a link to the system, as it runs on a developmental server hosted on a Raspberry Pi. This setup ensures the system is only accessible when connected to the local Wi-Fi network, providing an added layer of security.</p>
+
+            <!-- Full-Width Cards -->
+            <div class="row">
+                
+                <!-- Full-Width Card 1 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="living-room1.jpg" data-toggle="lightbox" data-title="Living-Room1">
+                            <img class="card-img-top" src="living-room1.jpg" alt="Living-Room1" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Homepage</h5>
+                            <p class="card-text">My goal was to keep the homepage as simple as possible, minimizing the number of options available to the user. I also aimed to make the homepage scalable, ensuring that additional controls—such as lighting control or other features—can easily be added in the future.</p>
+
+                            <p class="card-text">Each button on the homepage opens a distinct modal for controlling various system functions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Width Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="living-room2.jpg" data-toggle="lightbox" data-title="Living-Room2">
+                            <img class="card-img-top" src="living-room2.jpg" alt="Living-Room2" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Power</h5>
+                            <p class="card-text">The power modal provides straightforward control for turning both the projector and the 65" display on and off separately.</p>
+                            
+                            <p>The power on/off commands also trigger background actions, including audio level adjustments, unmuting, and video routing, ensuring the system self-adjusts with every power cycle.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Width Card 3 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="living-room5.jpg" data-toggle="lightbox" data-title="Living-Room3">
+                            <img class="card-img-top" src="living-room5.jpg" alt="Living-Room3" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Source Selection</h5>
+                            <p class="card-text">This image illustrates how the web app appears on a mobile device. The system is fully flexible and compatible with any device used to access it.</p>
+
+                            <p>The source selection feature enables users to route any device to either the projector, the TV, or both in real time, with no disruption to the system.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Width Card 4 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="living-room4.jpg" data-toggle="lightbox" data-title="Living-Room4">
+                            <img class="card-img-top" src="living-room4.jpg" alt="Living-Room4" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Audio Source Selection</h5>
+                            <p class="card-text">This feature was a recent addition. After the installation and setup were completed, it became clear that the system would benefit from a separate audio routing option. This was particularly important in situations where two users were using the projector and TV independently. One user, for example, may prefer to mute the audio on one device while using the other. This feature proved especially useful when, for instance, a game was installing on the PlayStation, and background music was playing while the user wanted to watch content on the Firestick without interruptions.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Daniel Bell. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Lightbox JS for viewing images in full screen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

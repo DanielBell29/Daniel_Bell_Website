@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel Bell - AV Engineer and Web Developer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">Daniel Bell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                        <a class="dropdown-item" href="web-development.html">Web Development</a>
+                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="jumbotron jumbotron-fluid text-center text-white hero-section">
+        <div class="container text-content">
+            <p class="lead">AV Engineer</p>
+            <p class="lead">AV Programmer</p>
+            <p class="lead">Web Developer</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-1 order-md-0 text-center">
+                <a id="slideshow-link" href="av-installation.html">
+                    <img id="slideshow-photo" src="install1.png" alt="Daniel Bell" class="photo">
+                </a>
+            </div>
+            <div class="col-md-6 order-0 order-md-1">
+                <h2>Thank you for visiting!</h2> 
+
+                <p>Welcome to my personal space where I bring together all my experiences and proudly showcase the projects that have defined my journey.</p> 
+
+                <p>Here, you’ll find a collection of my favorite AV projects alongside my most noteworthy web development achievements.</p> 
+
+                <p>Explore the Portfolio section below or use the quick links here to discover the highlights of my professional experience and creative work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-4 portfolio">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="av-installation.html">
+                        <div class="card project-card">
+                            <img class="card-img-top" src="install1.png" alt="Project 1" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title">AV Installation</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="av-rack-build.html">
+                        <div class="card project-card">
+                            <img class="card-img-top" src="rack1.jpg" alt="Project 2" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title">AV Rack Building</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="web-development.html">
+                        <div class="card project-card">
+                            <img class="card-img-top" src="web1.jpg" alt="Project 3" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!--<div class="col-md-4">
+                    <a href="animation.html">
+                        <div class="card project-card">
+                            <img class="card-img-top" src="animation1.jpg" alt="Project 4" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title">Animation</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Daniel Bell. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/DanielBell29" target="_blank" class="text-white mr-3">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" target="_blank" class="text-white">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

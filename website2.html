@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scottish Heritage Site - Raspberry Pi Interactive Signage - Daniel Bell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lightbox CSS for image enlargement -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">Daniel Bell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                        <a class="dropdown-item" href="web-development.html">Web Development</a>
+                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Web Development Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Scottish Heritage Site - Raspberry Pi Interactive Signage</h2>
+                <p>While working at an AV company, I frequently heard from engineers about ongoing issues with one of our National Trust customers' interactive signage displays. They reported persistent problems with various components of the exhibit failing, which led to repeated service requests and disruptions.</p> 
+            
+                <p>The interactive signage is supposed to be a playlist that plays old Scottish songs from different genres.</p>
+                
+                <p>After discussing the situation with the support engineer, I learned that the exhibit relied on an outdated PC running an old Flash application. This setup posed several challenges: the Flash application required a bulky PC that had to be housed in a server cabinet. From there, USB and HDMI transmitter/receiver kits connected the PC to the interactive display using two CAT6 cables for video and touch functionality. The complexity of this system, with numerous interconnected parts, made it prone to frequent failures.</p> 
+                
+                <p>Recognizing an opportunity for improvement, I proposed redesigning the Flash application as an HTML-based web page that could run locally on a Raspberry Pi installed behind the interactive display. The Raspberry Pi was configured to automatically open the web page in full-screen mode upon reboot, ensuring seamless operation even after power interruptions.</p> 
+            
+                <p><a href="https://burns-jukebox.netlify.app/">Here</a> is a link to the completed web application. The new system was installed over a year ago and has been operating without a single reported issue. The customer has been so impressed with the solution that they have expressed interest in implementing similar systems across all their exhibits onsite.</p>
+            
+            <!-- Full-Width Cards -->
+            <div class="row">
+                <!-- Full-Width Card 1 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="burns1.jpg" data-toggle="lightbox" data-title="Burns1">
+                            <img class="card-img-top" src="burns1.jpg" alt="Burns1" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Homepage</h5>
+                            <p class="card-text">This page serves as the main interface, displaying all available options to the user. The four album covers allow users to open their respective playlists, while the buttons at the bottom provide an alternative way to navigate between genres. These buttons remain accessible even when a playlist is open, ensuring seamless browsing across genres.</p>
+                            
+                            <p>Additionally, I implemented a "Pause All" feature for convenience and added user feedback for each genre selection, allowing users to easily identify the currently active genre.</p> 
+                            
+                            <p>To enhance usability, the system is configured to default back to this page if the display remains inactive for ten minutes, ensuring a consistent and user-friendly experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="burns2.jpg" data-toggle="lightbox" data-title="Burns2">
+                            <img class="card-img-top" src="burns2.jpg" alt="Burns2" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Book Sections</h5>
+                            <p class="card-text">This is the landing page for each genre, designed to provide an immersive and visually engaging experience. The layout is styled to resemble an open book, adding a creative and thematic touch to the interface.</p> 
+                            
+                            <p>Users can navigate through the content by touching the left or right pages, allowing them to seamlessly move to the previous or next sections within the genre.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 3 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="burns3.jpg" data-toggle="lightbox" data-title="Burns3">
+                            <img class="card-img-top" src="burns3.jpg" alt="Burns3" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Book Open</h5>
+                            <p class="card-text">Each song is accompanied by playback feedback displayed on the left side of the page, while a brief description or contextual information is presented on the right. This feature was an enhancement I introduced, as it was not part of the original design.</p> 
+                            
+                            <p>When users navigate between pages, the currently playing music continues uninterrupted until another song is selected. To prevent frustration among staff, no additional tracks play automatically once a song concludes. This ensures that users cannot simply select a song and walk away, leaving the system unattended.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Width Card 4 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="burns4.jpg" data-toggle="lightbox" data-title="Burns4">
+                            <img class="card-img-top" src="burns4.jpg" alt="Burns3" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">All Songs</h5>
+                            <p class="card-text">The final page provides a comprehensive view of the entire discography, organized by genre. This layout allows users to conveniently browse and access all songs from a single page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Daniel Bell. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Lightbox JS for viewing images in full screen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

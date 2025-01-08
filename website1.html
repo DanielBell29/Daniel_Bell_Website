@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AV Engineering Portal - Daniel Bell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lightbox CSS for image enlargement -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">Daniel Bell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                        <a class="dropdown-item" href="web-development.html">Web Development</a>
+                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Web Development Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">AV Engineering Portal</h2>
+                <p>Two years ago, while working for an AV company, I became increasingly frustrated with the outdated process of writing up job surveys. The process involved filling out a form created in a program similar to Microsoft Word. It was cumbersome, frequently crashed, and took an excessive amount of time to complete. More importantly, the form had only one photo upload field and had to be emailed, which often resulted in it getting lost in translation.</p> 
+            
+                <p>With my background in Web Development, I was dismayed by the lack of a reliable and efficient method for writing up our job surveys.</p> 
+            
+                <p>To address this issue, I started brainstorming and eventually mocked up a very crude <a href="https://job-survey-form-v1.netlify.app/">version</a> of the portal you see today. I decided to use Flask for the backend, connecting it to a PostgreSQL database to securely manage all customer information.</p> 
+            
+                <p>Initially, my goal for the portal was simply to create a survey form for the engineers. However, it has since evolved into a much larger application, now supporting the business support team, warehouse operations, and the engineering coordinator. I continue to improve the portal, regularly adding new features based on requests from the team.</p> 
+            
+                <p>Due to security and privacy concerns, I am unable to provide login access to the portal. However, I have included screen captures of each section of the site for your reference. Please note that the company logo has been removed from these images to maintain confidentiality.</p>
+            
+            <!-- Full-Width Cards -->
+            <div class="row">
+                <!-- Full-Width Card 1 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="portal1.jpg" data-toggle="lightbox" data-title="AV Engineering Portal1">
+                            <img class="card-img-top" src="portal1.jpg" alt="AV Engineering Portal1" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Login Page</h5>
+                            <p class="card-text">This portal demonstrates robust security features. Upon accessing any page, users are initially presented with a login/register page. Users can either log in, which retrieves their details from the database to personalize the portal experience based on their job title, or register a new account. During registration, user details are securely stored in the database, with the password being hashed to ensure full protection of sensitive information.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="portal2.jpg" data-toggle="lightbox" data-title="AV Engineering Portal2">
+                            <img class="card-img-top" src="portal2.jpg" alt="AV Engineering Portal2" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Homepage</h5>
+                            <p class="card-text">The homepage provides an overview of all available options. From this central hub, users can create new job forms, review previously submitted forms, add RAMS (Risk Assessments and Method Statements) from external sources for convenience, and check the release notes for each version update. The content and features visible on this page are tailored to different job titles. For instance, only managers have access to the "Manage Users" page, while employees can view all completed job forms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 3 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="portal3.jpg" data-toggle="lightbox" data-title="AV Engineering Portal3">
+                            <img class="card-img-top" src="portal3.jpg" alt="AV Engineering Portal3" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">All Jobs</h5>
+                            <p class="card-text">This is the central page of the portal, where employees can view and manage their own job forms, as well as access and edit job forms created by other engineers. This functionality has proven highly popular among engineers, as it enables them to easily review any job created, allowing them to identify potential issues before they arise. The benefit of centralizing all this information is significant for the company, as it ensures that no critical data is overlooked.</p>
+                            
+                            <p>I have had to alter the titles of each of these jobs, as it includes real world customer information.</p>
+                            
+                            <p>The traffic light system is a new feature that ties in with the completion certificate form that I will go over later on in this description.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 4 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="portal4.jpg" data-toggle="lightbox" data-title="AV Engineering Portal4">
+                            <img class="card-img-top" src="portal4.jpg" alt="AV Engineering Portal4" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Dropdown Menu</h5>
+                            <p class="card-text">A recent addition to the portal has streamlined the user experience by reducing clutter on this page, introducing a dropdown menu for each job.</p> 
+                            
+                            <p>Each job card is automatically generated upon submission of the Job Form, and a corresponding Completion Certificate is also automatically created.</p> 
+                            
+                            <p>With the automatic generation of each job, users are presented with several options within the job card itself:</p> 
+                            
+                            <p><strong>Open Job - </strong>This option allows the user to open and edit the job form, which is useful if additional information is required or if any details were inadvertently omitted.</p> 
+                            
+                            <p><strong>Add Engineer - </strong>Available to managers, this feature enables an engineering coordinator to assign an external subcontractor to upcoming jobs. The subcontractor will have access to the job details without the ability to view or modify any other information within the portal.</p> 
+                            
+                            <p><strong>Completion Certificate - </strong>This feature automatically generates a Completion Certificate based on the data entered during the creation of the Job Form. This automation significantly improves the efficiency of managing Completion Certificates, eliminating manual processes.</p> 
+                            
+                            <p><strong>Send Completion Certificate - </strong>A common challenge faced by engineers is the unavailability of customers to sign the Completion Certificate at the end of a job. To address this, the engineering coordinator can simply click this link to send a tokenized version of the Completion Certificate directly to the customer’s email. The customer can access and sign the certificate without needing to log in to the portal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 5 -->
+                <div class="col-12 mb-4">
+                    <div class="card position-relative">
+                        <button class="btn btn-light position-absolute left-0 top-50 transform-translate-y-50" onclick="changeImageSet1('prev')">
+                            &#8592;
+                        </button>
+                        
+                        <button class="btn btn-light position-absolute right-0 top-50 transform-translate-y-50" onclick="changeImageSet1('next')">
+                            &#8594;
+                        </button>
+
+                        <img id="imageSlide" class="card-img-top img-fluid" src="portal5.jpg" alt="AV Engineering Portal">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Completion Certificate</h5>
+                            <p class="card-text">This page is presented to the user when they select the Completion Certificate option.</p> 
+                            
+                            <p>As previously mentioned, the "All Jobs" Dashboard incorporates a traffic light system designed to assist the engineering coordinator in tracking the status of a job's completion, specifically regarding the engineer and customer signatures.</p> 
+                            
+                            <p>The indicator light is initially set to red by default, signifying that the Completion Certificate has not yet been reviewed or signed by either the engineer or the customer.</p> 
+                            
+                            <p>Once the engineer completes their section of the Completion Certificate (awaiting customer signature), the indicator changes to amber, signaling that the job is in progress and awaiting final approval.</p> 
+                            
+                            <p>Upon the customer signing the Completion Certificate, the indicator turns green. This change provides the engineering coordinator with a clear and immediate visual cue that the job is complete and ready for invoicing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 6 -->
+                <div class="col-12 mb-4">
+                    <div class="card position-relative">
+                        <button class="btn btn-light position-absolute left-0 top-50 transform-translate-y-50" onclick="changeImageSet2('prev')">
+                            &#8592;
+                        </button>
+
+                        <button class="btn btn-light position-absolute right-0 top-50 transform-translate-y-50" onclick="changeImageSet2('next')">
+                            &#8594;
+                        </button>
+
+                        <img id="imageSlide2" class="card-img-top img-fluid" src="portal9.jpg" alt="AV Engineering Portal">
+
+                        <div class="card-body">
+                            <h5 class="card-title">New Job Form</h5>
+                            <p class="card-text">In the past, the engineer job form was entirely paper-based. Today, engineers can complete the job survey form on their laptops or mobile devices while on-site with customers. This transition has proven to be highly beneficial, as each job is created and updated in real-time. Changes are automatically saved every time the save button is pressed, ensuring that information is always up-to-date.</p> 
+                            
+                            <p>All data entered into the form is securely saved to a database and can be easily retrieved when accessing the corresponding job from the "All Jobs" dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Width Card 7 -->
+                <div class="col-12 mb-4">
+                    <div class="card position-relative">
+                        <button class="btn btn-light position-absolute left-0 top-50 transform-translate-y-50" onclick="changeImageSet3('prev')">
+                            &#8592;
+                        </button>
+
+                        <button class="btn btn-light position-absolute right-0 top-50 transform-translate-y-50" onclick="changeImageSet3('next')">
+                            &#8594;
+                        </button>
+
+                        <img id="imageSlide3" class="card-img-top img-fluid" src="portal15.jpg" alt="AV Engineering Portal">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Parts List</h5>
+                            <p class="card-text">This section is one that I take the most pride in throughout the entire portal.</p> 
+                            
+                            <p>Each consumable part used by the company has been meticulously organized into a series of dropdown menus, enabling engineers to easily select the items they need without the hassle of recalling and manually filling out a blank form.</p> 
+                            
+                            <p>Engineers can simply navigate to the appropriate section and specify the quantity of each item required. Once they reach the bottom and click "Submit," a comprehensive list of selected items is automatically generated and presented in an organized order, ready for printing. This feature allows the Warehouse Manager to quickly locate and retrieve the items prior to the job with ease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Daniel Bell. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Lightbox JS for viewing images in full screen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maths Lesson for Primary 7 Class - Daniel Bell</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lightbox CSS for image enlargement -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html">Daniel Bell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                        <a class="dropdown-item" href="web-development.html">Web Development</a>
+                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Web Development Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Maths Lesson for Primary 7 Class</h2>
+                <p>This project is a simple yet effective solution. With a Primary School Teacher as my partner, I offered to assist her in streamlining her lessons to enhance classroom efficiency.</p> 
+            
+                <p>After discussing the structure and flow of her lessons, I saw an opportunity to create a user-friendly website that her students could access on their tablets. This project presented an enjoyable challenge, as it allowed me to combine technical skills with educational support.</p> 
+            
+                <p>I designed a straightforward layout, incorporating the specific resources my partner requested. To maintain academic integrity, I implemented a small piece of JavaScript on the "Answers" page to ensure that students could not easily access answers without permission.</p> 
+            
+                <p><a href="https://p7-maths-lessons.netlify.app/">Here</a> is the completed website. To improve accessibility, my partner created a QR code for the site and displayed it on her Smart Board, allowing students to quickly scan and navigate to the page.</p>
+            
+            <!-- Full-Width Cards -->
+            <div class="col-12 mb-4">
+                <div class="card position-relative">
+                    <button class="btn btn-light position-absolute left-0 top-50 transform-translate-y-50" onclick="changeImageSet4('prev')">
+                        &#8592;
+                    </button>
+
+                    <button class="btn btn-light position-absolute right-0 top-50 transform-translate-y-50" onclick="changeImageSet4('next')">
+                        &#8594;
+                    </button>
+
+                    <img id="imageSlide4" class="card-img-top img-fluid" src="maths1.jpg" alt="Maths Portal">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Maths Lesson Layout</h5>
+                        <p class="card-text">This section showcases each page of the site and highlights how the theme evolves across them, ensuring the page remains engaging and visually appealing for the students.</p> 
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Full-Width Card 2 -->
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <a href="maths6.jpg" data-toggle="lightbox" data-title="Maths6">
+                            <img class="card-img-top" src="maths6.jpg" alt="Maths6" class="img-fluid">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Password Access to Answers</h5>
+                            <p class="card-text">This is the page that students encounter when attempting to access the answers. The required password for entry is "9999."</p> 
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Daniel Bell. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Lightbox JS for viewing images in full screen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
