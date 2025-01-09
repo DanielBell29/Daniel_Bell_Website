@@ -11,42 +11,44 @@
     
     <!-- Font Awesome CSS for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Lightbox CSS for image enlargement -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="index.html">Daniel Bell</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                        <a class="dropdown-item" href="av-installation.html">AV Installation</a>
-                        <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
-                        <a class="dropdown-item" href="web-development.html">Web Development</a>
-                        <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <a class="navbar-brand" href="index.html">
+        <i class="fas fa-home"></i> <!-- Font Awesome Home Icon -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                    <a class="dropdown-item" href="av-installation.html">AV Installation</a>
+                    <a class="dropdown-item" href="av-rack-build.html">AV Rack Building</a>
+                    <a class="dropdown-item" href="web-development.html">Web Development</a>
+                    <!--<a class="dropdown-item" href="animation.html">Animation</a>-->
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
