@@ -1,16 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     console.log("Welcome to Daniel Bell's Portfolio!");
 
     // Modal functionality
-    var modal = document.getElementById("imageModal");
-    var modalImg = document.getElementById("modalImage");
-    var modalCaption = document.getElementById("modalDescription");
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalCaption = document.getElementById("modalDescription");
 
-    // Get all images with the class 'modal-trigger'
-    var images = document.getElementsByClassName("modal-trigger");
+    const images = document.getElementsByClassName("modal-trigger");
 
     // AV Installation Descriptions
-    var descriptions = [
+    const descriptions = [
         "This project showcases a complete AV system installation tailored for a living room. It features an Extron 4x2 HDMI matrix for flexible input-output switching, a Raspberry Pi-based developmental server for seamless mobile control, a 65\" 4K display, a 2.4-meter motorized projection screen, front-of-house speakers, and a high-definition projector. The setup offers an immersive viewing and audio experience for home entertainment.",
         "A video conferencing room designed and installed for optimal collaboration. This setup allows users to present content on any of the three displays or span a single presentation across all three screens for an extended viewing experience.",
         "A closer look at the work involved in wiring and organizing components at the rear of a smaller AV installation. This example highlights the attention to detail to creating a functional and visually clean system that performs reliably.",
@@ -28,60 +27,52 @@ document.addEventListener("DOMContentLoaded", function() {
         "This room is designed to simulate a Wall Street-style trading experience. Equipped with a powerful video matrix, it enables seamless switching and presentation of any input source to any of the four displays. The flexible and dynamic setup provides an engaging and immersive environment for financial analysis and decision-making simulations.",
         "An example of a fully equipped Microsoft Teams Certified Yealink Room. This setup includes a TAP controller for room management, ensuring seamless video conferencing and collaboration. It offers a streamlined and intuitive user experience for modern hybrid workspaces.",
         "A showcase of cable management behind a display, demonstrating a commitment to clean and organized wiring. This photograph highlights the precision and care taken to create a professional finish that not only looks great but also ensures reliable system performance.",
-        "A  living room installation featuring hidden cabling for a clean and modern aesthetic. The addition of a soundbar enhances audio quality, delivering rich and immersive sound for movies, music, and everyday entertainment without compromising on style."
+        "A living room installation featuring hidden cabling for a clean and modern aesthetic. The addition of a soundbar enhances audio quality, delivering rich and immersive sound for movies, music, and everyday entertainment without compromising on style."
     ];
 
-    // Check the current page using the document's URL
-    var currentPage = window.location.pathname.split("/").pop(); // Get the current page file name
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    let currentIndex = -1;
 
-    let currentIndex = -1; // Track the currently displayed image
-
-    // Loop through all images and add click event
     for (let i = 0; i < images.length; i++) {
-        images[i].onclick = function() {
+        images[i].onclick = function () {
             modal.style.display = "block";
             modalImg.src = this.src;
-            currentIndex = i; // Update the current index
-            
-            // Only set the description if the page is av-installation.html
-            if (currentPage === "av-installation.html") {
-                modalCaption.innerText = descriptions[i]; // Set the corresponding description
-            } else {
-                modalCaption.innerText = ""; // Clear description for other pages
-            }
-        }
+            currentIndex = i;
+
+            modalCaption.innerText =
+                currentPage.includes("av-installation") && descriptions[i]
+                    ? descriptions[i]
+                    : "";
+        };
     }
 
-    // Close modal on clicking <span> (x) or outside the image
-    var span = document.getElementsByClassName("close")[0];
-    span.onclick = function() { modal.style.display = "none"; }
-    modal.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+    const closeModal = () => {
+        modal.style.display = "none";
+    };
 
-    // Navigate with left and right arrow keys
-    document.addEventListener("keydown", function(event) {
-        if (modal.style.display === "block") { // Only respond if the modal is open
+    document.querySelector(".close").onclick = closeModal;
+    modal.onclick = (event) => {
+        if (event.target === modal) closeModal();
+    };
+
+    document.addEventListener("keydown", (event) => {
+        if (modal.style.display === "block") {
             if (event.key === "ArrowRight") {
-                // Show the next image
                 currentIndex = (currentIndex + 1) % images.length;
-                modalImg.src = images[currentIndex].src;
-                if (currentPage === "av-installation.html") {
-                    modalCaption.innerText = descriptions[currentIndex];
-                } else {
-                    modalCaption.innerText = "";
-                }
             } else if (event.key === "ArrowLeft") {
-                // Show the previous image
                 currentIndex = (currentIndex - 1 + images.length) % images.length;
-                modalImg.src = images[currentIndex].src;
-                if (currentPage === "av-installation.html") {
-                    modalCaption.innerText = descriptions[currentIndex];
-                } else {
-                    modalCaption.innerText = "";
-                }
+            } else {
+                return;
             }
+            modalImg.src = images[currentIndex].src;
+            modalCaption.innerText =
+                currentPage.includes("av-installation") && descriptions[currentIndex]
+                    ? descriptions[currentIndex]
+                    : "";
         }
     });
 });
+
 
 
 
