@@ -1,8 +1,8 @@
-/* General styles */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: lightskyblue !important;
+    background-color: lightblue !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,7 +17,6 @@ p {
     font-size: 1rem;
 }
 
-/* Navbar */
 .navbar {
     background-color: #f8f9fa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -32,7 +31,6 @@ p {
     color: #007bff;
 }
 
-/* Hero Section */
 .hero-section {
     background: lightblue url('cover.jpg') center center no-repeat;
     background-size: cover;
@@ -48,7 +46,6 @@ p {
     background-color: transparent !important;
 }
 
-/* Darker Haze Overlay */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -56,11 +53,10 @@ p {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Grey semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 0;
 }
 
-/* Text Styles */
 .hero-section .text-content {
     z-index: 1;
     position: relative;
@@ -69,12 +65,10 @@ p {
 .hero-section .lead {
     font-size: 2rem;
     font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow for text readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     border-bottom: solid 0.2px white;
 }
 
-
-/* Card Styles */
 .project-card {
     height: 350px;
     display: flex;
@@ -88,7 +82,7 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px; /* Adds space between rows */
+    margin-bottom: 30px;
 }
 
 .project-card {
@@ -99,7 +93,7 @@ p {
 }
 
 .project-card img {
-    height: 200px; /* Fixed height for images */
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -116,7 +110,6 @@ p {
 
 
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -168,7 +161,6 @@ p {
     cursor: pointer;
 }
 
-/* Modal description styling */
 #modalDescription {
     font-size: 1rem;
     color: #ffffff;
@@ -214,11 +206,11 @@ footer {
 }
 
 .left-0 {
-    left: 10px; /* Adjust left positioning */
+    left: 10px;
 }
 
 .right-0 {
-    right: 10px; /* Adjust right positioning */
+    right: 10px;
 }
 
 .card-img-top {
@@ -228,39 +220,33 @@ footer {
 
 
 
-/* Adjust the About section */
 #about .row {
     display: flex;
-    justify-content: space-between;  /* Distribute the items evenly */
-    align-items: center; /* Vertically align the image and text */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Ensure equal spacing by adjusting column widths */
 #about .col-md-6 {
-    flex: 0 0 48%; /* Each column will take 48% of the container's width */
-    padding: 0 15px; /* Add some padding between columns */
+    flex: 0 0 48%;
+    padding: 0 15px;
 }
 
-/* Optional: Adjust image size for balance */
 #about img {
-    width: 100%;  /* Adjust as necessary */
+    width: 100%;
     height: auto;
 }
 
-/* Container padding to avoid edge touching */
 #about .container {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-/* Mobile view adjustments */
 @media (max-width: 767px) {
-    /* Stack the image above the text and center it */
     #about .col-md-6 {
         flex: 0 0 100%;
     }
     #about .text-center {
-        text-align: center; /* Ensure the image is centered */
+        text-align: center;
     }
 }
 

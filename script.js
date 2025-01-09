@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Get all images with the class 'modal-trigger'
     var images = document.getElementsByClassName("modal-trigger");
 
-    // Array of descriptions corresponding to images
+    // AV Installation Descriptions
     var descriptions = [
         "This project showcases a complete AV system installation tailored for a living room. It features an Extron 4x2 HDMI matrix for flexible input-output switching, a Raspberry Pi-based developmental server for seamless mobile control, a 65\" 4K display, a 2.4-meter motorized projection screen, front-of-house speakers, and a high-definition projector. The setup offers an immersive viewing and audio experience for home entertainment.",
         "A video conferencing room designed and installed for optimal collaboration. This setup allows users to present content on any of the three displays or span a single presentation across all three screens for an extended viewing experience.",
